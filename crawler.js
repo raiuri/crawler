@@ -11,7 +11,11 @@ module.exports = ({ league_url, element }) => {
             } else {
                 var $ = res.$;
 
-                console.log($(element).text());
+                const data = $(element);
+
+                var result = data[2].children;
+
+                console.log(result);
             }
 
             done();
